@@ -1,0 +1,13 @@
+{
+  "name": "portal-riss-backend",
+  "version": "1.0.0",
+  "description": "Backend serverless para Portal RISS",
+  "main": "api/excel.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "@azure/msal-node": "^2.5.0"
+  }
+}
