@@ -1,10 +1,10 @@
 const axios = require('axios');
 
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const TENANT_ID = process.env.TENANT_ID;
-const FILE_ID = process.env.FILE_ID;
-const SHEET_NAME = process.env.SHEET_NAME;
+const CLIENT_ID = process.env.AZURE_CLIENT_ID;
+const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET;
+const TENANT_ID = process.env.AZURE_TENANT_ID;
+const FILE_ID = process.env.EXCEL_FILE_ID;
+const SHEET_NAME = process.env.EXCEL_SHEET_NAME;
 
 async function getAccessToken() {
     const tokenEndpoint = `https://login.microsoftonline.com/${TENANT_ID}/oauth2/v2.0/token`;
